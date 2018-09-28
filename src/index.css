@@ -1,0 +1,155 @@
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/*top level*/
+/**
+we need width: 100vw; to stretch the three sections to full width
+should not use flex : 1
+ */
+/*seems fine to remove 100vh*/
+.vbox {
+  display: flex;
+  flex-direction: column;
+  /*flex: 1;*/
+  width: 100vw;
+  height: 100vh;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+header,
+footer {
+  height: 100px;
+  background-color: aliceblue;
+}
+
+/**
+100vh is the key why this works
+its a firefox fix to show the vertical scroll bar
+in chrome we dnt have to do this...
+ */
+nav {
+  flex: 1;
+  display: flex;
+  background-color: #191b22;
+  flex-direction: column;
+  align-items: stretch; /* align items in Cross Axis */
+  height: 100vh;
+  /*height: 100%;*/
+}
+
+article {
+  flex: 2;
+  background-color: #191b22;
+  flex-direction: column;
+  align-items: stretch; /* align items in Cross Axis */
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/ramp.jpg);*/
+  /*background-position: bottom left;*/
+  /*background-color: aliceblue;*/
+  flex: 1;
+}
+
+/**
+we need min-height: 0; here
+ */
+
+.leftPanel {
+  /*background-color: burlywood;*/
+  /* margin: 10px; */
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: row;
+  min-height: 0;
+  flex: 1;
+  /* margin: 10px 0px; */
+}
+
+.sidebarHeader {
+  background-color: #393f4f;
+  display: flex;
+  flex-direction: row;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 5px;*/
+}
+
+.membersPanel {
+  /*background-color: burlywood;*/
+  /* margin: 10px; */
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* margin-right: 10px; */
+}
+
+.detailsPanel {
+  background-color: burlywood;
+  /* margin: 10px; */
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* margin-right: 10px; */
+}
+
+.searchBar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  /* align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start; */
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  /* align-items: center; */
+  /* padding: 5px; */
+  background-color: #313543;
+}
+
+.bottomBar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  /* padding: 5px; */
+  background-color: #313543;
+}
+
+.home {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.details {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "bundle-spy2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material/button": "^0.39.3",
+    "@material/icon-button": "^0.39.3",
+    "@material/shape": "^0.39.0",
+    "@material/snackbar": "^0.39.1",
+    "@material/textfield": "^0.40.0",
+    "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.0.0-alpha.18",
+    "firebase": "^5.5.1",
+    "localforage": "^1.7.2",
+    "material-lib": "codiechanel/material-lib#dde221d73ea8ffde437fedddc6992ca301efbefe",
+    "mobx": "4.3.2",
+    "mobx-react": "^5.2.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.5.2",
+    "react-media": "^1.8.0",
+    "react-router": "^4.3.1",
+    "react-scripts-ts": "2.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "run-ts": "ts-node hello.ts",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "serve": "serve -s build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-router": "^4.0.31",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "typescript": "^3.0.3"
+  }
+}
