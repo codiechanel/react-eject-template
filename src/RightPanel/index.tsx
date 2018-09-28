@@ -1,14 +1,11 @@
-import * as React from 'react'
 import { observer } from 'mobx-react'
-import { observable } from 'mobx'
-
-import * as PropTypes from 'prop-types'
+import * as React from 'react'
 import Media from 'react-media'
-import Members from '../components/Members'
-import UIRouterPlain from '../common/UIRouterPlain'
 import store from '../common/Store'
+import UIRouterPlain from '../common/UIRouterPlain'
 import Details from '../components/Details'
-import { MemoryRouter, Switch, Route } from 'react-router'
+import Members from '../components/Members'
+
 @observer
 class RightPanel extends React.Component<any, any> {
   render() {

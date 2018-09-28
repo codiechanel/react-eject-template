@@ -1,20 +1,15 @@
-import * as React from 'react'
-
-import * as PropTypes from 'prop-types'
-import { observer } from 'mobx-react'
-
-import { Container, Content, Icon, List, ListItem, Text } from 'material-lib'
-
 // export interface HomeProps {
 //   history: Object
 // }
 import store from 'common/Store'
+import UIRouterPlain from 'common/UIRouterPlain'
+import { Icon } from 'material-lib'
+import { observable } from 'mobx'
+import { observer } from 'mobx-react'
+import * as React from 'react'
 // import Icon from 'material/Icon'
-
 import SearchBar from '../components/SearchBar'
 import GroupsPanel from './GroupsPanel'
-import { observable } from 'mobx'
-import UIRouterPlain from 'common/UIRouterPlain'
 import SuggestionsPanel from './SuggestionsPanel'
 
 @observer

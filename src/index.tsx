@@ -1,20 +1,13 @@
+import { common } from 'material-lib'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import * as PropTypes from 'prop-types'
-
-import * as styles from '../styles.module.css'
-
+import Media from 'react-media'
 // import Home from 'components/LeftPanel'
-import { MemoryRouter, Switch, Route } from 'react-router'
-import './index.css'
+import { MemoryRouter, Route } from 'react-router'
 import './icons.css'
-
+import './index.css'
 import LeftPanel from './LeftPanel'
 import RightPanel from './RightPanel'
-import MessageListener from './components/MessageListener'
-import { Container, common } from 'material-lib'
-import Media from 'react-media'
-import store from 'common/Store'
 
 let palette = {
   brandPrimary: '#606984',
@@ -44,14 +37,7 @@ class App extends React.Component<any, any> {
     super(props)
   }
 
-  componentDidMount() {
-    this.loadInitialData().catch()
-  }
-
-  async loadInitialData() {
-    await store.loadPackages()
-    await store.loadCompareGroups()
-  }
+  componentDidMount() {}
 
   render() {
     return (
